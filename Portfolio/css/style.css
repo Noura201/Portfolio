@@ -1,0 +1,745 @@
+body {
+    overflow: auto;
+    font-family:'Segoe UI', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --white-color: #FFF;
+    --whiteGray-color: #EEE;
+    --light-color: #F8F9FA;
+    --dark-color: #000;
+    --darkGray-color: rgb(255, 255, 255, 0.2);
+}
+
+/* Tablet-And-Mobile-BarDiv & ULDIV */
+.navbar .bar-div,
+.tablet-navbar-ul-div {
+    display: none;
+}
+
+/* Navbar-Div-Start */
+.navbar {
+    width: 100%;
+    height: 80px;
+    padding: 15px 45px;
+    background-color: var(--dark-color);
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .navbar-logo {
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.navbar .navbar-ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navbar .navbar-ul li {
+    padding-inline: 15px;
+}
+.navbar .navbar-ul li * {
+    text-transform: capitalize;
+}
+.navbar .navbar-ul li a {
+    color: var(--white-color);
+}
+.navbar .navbar-ul .cv-button {
+    padding-right: 0;
+}
+.navbar .navbar-ul li button {
+    padding: 7px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14.5px;
+}
+.navbar .navbar-ul li button a {
+    color: var(--dark-color);
+}
+.navbar .navbar-ul li button a span {
+    text-transform: uppercase;
+}
+/* Navbar-Div-End */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    padding: 20px 10px;
+}
+.home, .about, .skills, .experience, .projects, .contact {
+    scroll-margin-top: 80px;
+} 
+/* Home-Div-Start */
+.home {
+    height: calc(100vh - 80px);
+    width: 100%;
+    position: relative;
+    top: 80px;
+    background-color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .container {
+    height: 100%;
+}
+.home .container h1 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.home .container .para1 {
+    padding-top: 12px;
+    padding-bottom: 25px;
+}
+.home .container .about-ul {
+    list-style: none;
+    text-transform: capitalize;
+}
+.home .container .about-ul li {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding-block: 8px;
+}
+.home .container .about-ul .location-li p {
+    padding-left: 5px;
+}
+.home .container .about-ul .available-li {
+    padding-bottom: 25px;
+}
+.home .container .about-ul .available-li svg {
+    margin-left: 2.5px;
+}
+.home .container .about-ul .available-li p {
+    padding-left: 8px;
+}
+.home .container .about-ul li a {
+    padding-left: 9px;
+}
+/* Home-Div-End */
+
+/* About-Div-Start */
+.about {
+    width: 100%;
+    background-color: var(--whiteGray-color);
+    margin-top: 80px;
+}
+.about .container {
+    padding-block: 60px;
+}
+.about .container span {
+    text-transform: capitalize;
+}
+.about .container h2 {
+    width: fit-content;
+    align-self: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+.about .container .para1, 
+.container .para2,
+.container .para3, 
+.container .para4, 
+.container .para5 {
+    padding-top: 20px;
+}
+.about .container .about-ul {
+    list-style: none;
+    padding-top: 5px;
+}
+/* About-Div-End */
+
+/* Skills-Div-Start */
+.skills {
+    width: 100%;
+    scroll-margin-top: 80px;
+    background-color: var(--light-color);
+}
+.skills .container {
+    padding-block: 60px;
+}
+.skills .container h2 {
+    width: fit-content;
+    align-self: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+.skills .container h3 {
+    width: fit-content;
+    align-self: center;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.skills .container .skills-container {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.skills .container .skills-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 12px;
+}
+.skills .container .skills-container div .span1, div .span2 {
+    text-transform: uppercase;
+}
+/* Skills-Div-End */
+
+/* Experience-Div-Start */
+.experience {
+    width: 100%;
+    background-color: var(--whiteGray-color);
+}
+.experience .container {
+    padding-block: 60px;
+}
+.experience .container h2 {
+    width: fit-content;
+    align-self: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+.experience .container h3 {
+    width: fit-content;
+    align-self: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.experience 
+.container .DEPI-EXP,
+.container .ISchool-EXP,
+.container .Route-EXP {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    margin-block: 20px;
+}
+.experience 
+.container .DEPI-EXP img,
+.container .ISchool-EXP img,
+.container .Route-EXP img {
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+}
+.experience .container 
+.DEPI-EXP .txt-div,
+.ISchool-EXP .txt-div,
+.Route-EXP .txt-div {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.experience .container 
+.DEPI-EXP .txt-div .header-div,
+.ISchool-EXP .txt-div .header-div,
+.Route-EXP .txt-div .header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.experience .container 
+.DEPI-EXP .txt-div .details-ul,
+.ISchool-EXP .txt-div .details-ul,
+.Route-EXP .txt-div .details-ul {
+    list-style: none;
+    padding-top: 10px;
+}
+.experience .container 
+.DEPI-EXP .txt-div .details-ul li,
+.ISchool-EXP .txt-div .details-ul li,
+.Route-EXP .txt-div .details-ul li {
+    margin-block: 3px;
+}
+/* Experience-Div-End */
+
+/* Projects-Div-Start */
+.projects {
+    width: 100%;
+    background-color: var(--light-color);
+}
+.projects .container {
+    padding-block: 60px;
+}
+.projects .container h2 {
+    width: fit-content;
+    align-self: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+.projects .container h3 {
+    width: fit-content;
+    align-self: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.projects .container 
+.ECommerce-Project,
+.Layout-Project1,
+.Layout-Project2,
+.Route-Project1,
+.Route-Project2,
+.Route-Project3,
+.Route-Project4,
+.Route-Project5,
+.Route-Project6 {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    border-radius: 10px;
+    margin-block: 20px;
+    background-color: var(--whiteGray-color);
+}
+.projects .container
+.ECommerce-Project img,
+.Layout-Project1 img,
+.Layout-Project2 img,
+.Route-Project1 img,
+.Route-Project2 img,
+.Route-Project3 img,
+.Route-Project4 img,
+.Route-Project5 img,
+.Route-Project6 img {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+}
+.projects .container 
+.ECommerce-Project .txt-div,
+.Layout-Project1 .txt-div,
+.Layout-Project2 .txt-div,
+.Route-Project1 .txt-div,
+.Route-Project2 .txt-div,
+.Route-Project3 .txt-div,
+.Route-Project4 .txt-div,
+.Route-Project5 .txt-div,
+.Route-Project6 .txt-div {
+    width: 100%;
+    padding-inline: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects .container 
+.ECommerce-Project .txt-div .header-div,
+.Layout-Project1 .txt-div .header-div,
+.Layout-Project2 .txt-div .header-div,
+.Route-Project1 .txt-div .header-div,
+.Route-Project2 .txt-div .header-div,
+.Route-Project3 .txt-div .header-div,
+.Route-Project4 .txt-div .header-div,
+.Route-Project5 .txt-div .header-div,
+.Route-Project6 .txt-div .header-div {
+    display: flex;
+    align-items: center;   
+}
+.projects .container 
+.ECommerce-Project .txt-div .details-div p,
+.Layout-Project1 .txt-div .details-div p,
+.Layout-Project2 .txt-div .details-div p,
+.Route-Project1 .txt-div .details-div p,
+.Route-Project2 .txt-div .details-div p,
+.Route-Project3 .txt-div .details-div p,
+.Route-Project4 .txt-div .details-div p,
+.Route-Project5 .txt-div .details-div p,
+.Route-Project6 .txt-div .details-div p {
+    padding-block: 10px;
+}
+.projects .container 
+.ECommerce-Project .txt-div .details-div h5,
+.Layout-Project1 .txt-div .details-div h5,
+.Layout-Project2 .txt-div .details-div h5,
+.Route-Project1 .txt-div .details-div h5,
+.Route-Project2 .txt-div .details-div h5,
+.Route-Project3 .txt-div .details-div h5,
+.Route-Project4 .txt-div .details-div h5,
+.Route-Project5 .txt-div .details-div h5,
+.Route-Project6 .txt-div .details-div h5 {
+    font-size: 16px;
+}
+.projects .container 
+.ECommerce-Project .txt-div .details-div .tech-div *,
+.Layout-Project1 .txt-div .details-div .tech-div *,
+.Layout-Project2 .txt-div .details-div .tech-div *,
+.Route-Project1 .txt-div .details-div .tech-div *,
+.Route-Project2 .txt-div .details-div .tech-div *,
+.Route-Project3 .txt-div .details-div .tech-div *,
+.Route-Project4 .txt-div .details-div .tech-div *,
+.Route-Project5 .txt-div .details-div .tech-div *,
+.Route-Project6 .txt-div .details-div .tech-div * {
+    display: inline-block;
+    margin-top: 5px;
+}
+/* Projects-Div-End */
+
+/* Contact-Div-Start */
+.contact {
+    background-color: var(--whiteGray-color);
+}
+.contact .container {
+    padding-block: 60px;
+    align-items: center;
+}
+.contact .container h2 {
+    width: fit-content;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+.contact .container h3 {
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    padding-inline: 20px;
+}
+.contact .container .email-div {
+    display: flex;
+    align-items: center;
+    margin-block: 20px;
+}
+.contact .container .email-div svg {
+    margin-right: 10px;
+}
+.contact .container p {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.contact .container .social-div {
+    display: flex;
+    align-items: center;
+}
+.contact .container .social-div a {
+    margin-inline: 10px;
+}
+/* Contact-Div-End */
+
+/* MEDIA-QUERIES */
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        width: 80%;
+    }
+}
+/* ****************************** */
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .container {
+        width: 87%;
+    }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .container {
+        width: 95%;
+    }
+}
+/* ****************************** */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 97%;
+    }
+}
+/* ****************************** */
+/* Common Properties */
+@media (min-width: 992px) {
+    .projects .container 
+    .ECommerce-Project .txt-div .header-div h4,
+    .Layout-Project1 .txt-div .header-div h4,
+    .Layout-Project2 .txt-div .header-div h4,
+    .Route-Project1 .txt-div .header-div h4,
+    .Route-Project2 .txt-div .header-div h4,
+    .Route-Project3 .txt-div .header-div h4,
+    .Route-Project4 .txt-div .header-div h4,
+    .Route-Project5 .txt-div .header-div h4,
+    .Route-Project6 .txt-div .header-div h4 {
+        padding-right: 10px;
+    }
+}
+/* ****************************** */
+
+/* Common Properties */
+@media (max-width: 991px) {
+    /* Laptop Navbar */
+    .navbar .navbar-ul {
+        display: none;
+    }
+    /* Tablet-And-Mobile-BarDiv */
+    .navbar .bar-div {
+        display: block;
+        padding: 3px 6px;
+        border: 0.1px solid var(--darkGray-color);
+        border-radius: 10px;
+        display: flex;
+        cursor: pointer;
+    }
+    /* Tablet-And-Mobile-ULDiv */
+    .tablet-navbar-ul-div {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        position: fixed;
+        z-index: 99;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: var(--dark-color);
+        border-top: 1px solid var(--darkGray-color);
+        transition: all 0.5s ease;
+    }
+    .tablet-navbar-ul-div .tablet-navbar-ul li {
+        padding-block: 10px;
+    }
+    .tablet-navbar-ul-div .tablet-navbar-ul li * {
+        text-transform: capitalize;
+    }
+    .tablet-navbar-ul-div .tablet-navbar-ul li a {
+        color: var(--white-color);
+    }
+    .tablet-navbar-ul-div .tablet-navbar-ul li button {
+        padding: 7px;
+        border-radius: 4px;
+        border: none;
+        font-size: 14.5px;
+    }
+    .tablet-navbar-ul-div .tablet-navbar-ul li button a {
+        color: var(--dark-color);
+    }
+    .tablet-navbar-ul-div .tablet-navbar-ul li button a span {
+        text-transform: uppercase;
+    }
+    .projects .container 
+    .ECommerce-Project,
+    .Layout-Project1,
+    .Layout-Project2,
+    .Route-Project1,
+    .Route-Project2,
+    .Route-Project3,
+    .Route-Project4,
+    .Route-Project5,
+    .Route-Project6 {
+        flex-direction: column;
+    }
+    .projects .container
+    .ECommerce-Project img,
+    .Layout-Project1 img,
+    .Layout-Project2 img,
+    .Route-Project1 img,
+    .Route-Project2 img,
+    .Route-Project3 img,
+    .Route-Project4 img,
+    .Route-Project5 img,
+    .Route-Project6 img {
+        width: 100%;
+    }
+    .projects .container 
+    .ECommerce-Project .txt-div,
+    .Layout-Project1 .txt-div,
+    .Layout-Project2 .txt-div,
+    .Route-Project1 .txt-div,
+    .Route-Project2 .txt-div,
+    .Route-Project3 .txt-div,
+    .Route-Project4 .txt-div,
+    .Route-Project5 .txt-div,
+    .Route-Project6 .txt-div {
+        padding: 20px 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 92%;
+    }
+    .home .container h1 {
+        font-size: 32px;
+    }
+    .about .container h2,
+    .skills .container h2,
+    .experience .container h2,
+    .projects .container h2,
+    .contact .container h2 {
+        font-size: 27px;
+    }
+    .skills .container h3,
+    .experience .container h3,
+    .projects .container h3,
+    .contact .container h3 {
+        font-size: 17px;
+    }
+    .contact .container p {
+        font-size: 16px;
+    }
+    .projects .container 
+    .ECommerce-Project .txt-div .header-div h4,
+    .Layout-Project1 .txt-div .header-div h4,
+    .Layout-Project2 .txt-div .header-div h4,
+    .Route-Project1 .txt-div .header-div h4,
+    .Route-Project2 .txt-div .header-div h4,
+    .Route-Project3 .txt-div .header-div h4,
+    .Route-Project4 .txt-div .header-div h4,
+    .Route-Project5 .txt-div .header-div h4,
+    .Route-Project6 .txt-div .header-div h4 {
+        padding-right: 10px;
+    }
+
+}
+/* ****************************** */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+    .container {
+        width: 85%;
+    }
+    .home .container h1 {
+        font-size: 30px;
+    }
+    .about .container h2,
+    .skills .container h2,
+    .experience .container h2,
+    .projects .container h2,
+    .contact .container h2 {
+        font-size: 25px;
+    }
+    .skills .container h3,
+    .experience .container h3,
+    .projects .container h3,
+    .contact .container h3 {
+        font-size: 16px;
+    }
+    .contact .container p {
+        font-size: 15px;
+    }
+
+    .experience 
+    .container .DEPI-EXP,
+    .container .ISchool-EXP,
+    .container .Route-EXP {
+        flex-direction: column;
+    }
+    .experience 
+    .container .DEPI-EXP img,
+    .container .ISchool-EXP img,
+    .container .Route-EXP img {
+        width: 50%;
+    }
+    .experience .container 
+    .DEPI-EXP .txt-div,
+    .ISchool-EXP .txt-div,
+    .Route-EXP .txt-div {
+        padding: 20px 10px;
+    }
+
+    .experience .container 
+    .DEPI-EXP .txt-div .header-div,
+    .ISchool-EXP .txt-div .header-div,
+    .Route-EXP .txt-div .header-div {
+        flex-direction: column;
+    }
+    .projects .container 
+    .ECommerce-Project .txt-div .header-div,
+    .Layout-Project1 .txt-div .header-div,
+    .Layout-Project2 .txt-div .header-div,
+    .Route-Project1 .txt-div .header-div,
+    .Route-Project2 .txt-div .header-div,
+    .Route-Project3 .txt-div .header-div,
+    .Route-Project4 .txt-div .header-div,
+    .Route-Project5 .txt-div .header-div,
+    .Route-Project6 .txt-div .header-div {
+        flex-direction: column;
+    }
+    .projects .container 
+    .ECommerce-Project .txt-div .header-div h4,
+    .Layout-Project1 .txt-div .header-div h4,
+    .Layout-Project2 .txt-div .header-div h4,
+    .Route-Project1 .txt-div .header-div h4,
+    .Route-Project2 .txt-div .header-div h4,
+    .Route-Project3 .txt-div .header-div h4,
+    .Route-Project4 .txt-div .header-div h4,
+    .Route-Project5 .txt-div .header-div h4,
+    .Route-Project6 .txt-div .header-div h4 {
+        padding-bottom: 2px;
+    }
+}
+
+@media(max-width: 499px) {
+    .navbar {
+        padding-inline: 15px;
+    }
+    .navbar .navbar-logo {
+        font-size: 28px;
+    }
+    .home {
+        padding-block: 330px;
+    }
+    .contact .container .email-div {
+        display: flex;
+        flex-direction: column;
+        font-size: 14.5px;
+    } 
+}
+
+
+
+
+
+
+
+
