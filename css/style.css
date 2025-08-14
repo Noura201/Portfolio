@@ -41,9 +41,7 @@ html {
 .navbar .navbar-logo {
   color: var(--white-color);
   font-size: 30px;
-  font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-style: normal;
   text-transform: capitalize;
 }
 .navbar .navbar-ul {
@@ -109,9 +107,7 @@ html {
 }
 .home .container h1 {
   font-size: 40px;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-style: normal;
   text-transform: capitalize;
 }
 .home .container .para1 {
@@ -161,9 +157,7 @@ html {
   width: fit-content;
   align-self: center;
   font-size: 30px;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
   padding-bottom: 5px;
   text-transform: capitalize;
   color: var(--black-color);
@@ -194,9 +188,7 @@ html {
   width: fit-content;
   align-self: center;
   font-size: 30px;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
   padding-bottom: 5px;
   text-transform: capitalize;
   color: var(--black-color);
@@ -205,9 +197,7 @@ html {
   width: fit-content;
   align-self: center;
   font-size: 20px;
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal;
   text-transform: capitalize;
 }
 .skills .container .skills-container {
@@ -243,9 +233,7 @@ div .span2 {
   width: fit-content;
   align-self: center;
   font-size: 30px;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
   padding-bottom: 5px;
   text-transform: capitalize;
   color: var(--black-color);
@@ -255,9 +243,7 @@ div .span2 {
   align-self: center;
   text-align: center;
   font-size: 20px;
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal;
   padding-bottom: 10px;
   text-transform: capitalize;
 }
@@ -273,28 +259,25 @@ div .span2 {
   border-radius: 10px;
   margin-block: 20px;
 }
-.experience .container .DEPI-EXP img,
-.container .ISchool-EXP img,
-.container .Route-EXP img {
+.experience .container img {
   width: 200px;
   height: 100%;
   border-radius: 10px;
 }
-.experience .container .DEPI-EXP .txt-div,
-.ISchool-EXP .txt-div,
-.Route-EXP .txt-div {
+.experience .container .txt-div {
   width: 100%;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.experience .container .DEPI-EXP .header-div,
-.ISchool-EXP .header-div,
-.Route-EXP .header-div {
+.experience .container .header-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.experience .container .header-div * {
+  font-weight: 600;
 }
 .experience .container .details-ul {
   list-style: none;
@@ -317,9 +300,7 @@ div .span2 {
   width: fit-content;
   align-self: center;
   font-size: 30px;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
   padding-bottom: 5px;
   text-transform: capitalize;
   color: var(--black-color);
@@ -329,9 +310,7 @@ div .span2 {
   align-self: center;
   text-align: center;
   font-size: 20px;
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal;
   padding-bottom: 10px;
   text-transform: capitalize;
 }
@@ -369,6 +348,9 @@ div .span2 {
   display: flex;
   align-items: center;
 }
+.projects .container .header-div * {
+  font-weight: 600;
+}
 .projects .container .details-div p {
   padding-block: 10px;
 }
@@ -392,9 +374,7 @@ div .span2 {
 .contact .container h2 {
   width: fit-content;
   font-size: 30px;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
   padding-bottom: 5px;
   text-transform: capitalize;
   color: var(--black-color);
@@ -402,9 +382,7 @@ div .span2 {
 .contact .container h3 {
   width: fit-content;
   font-size: 18px;
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal;
   text-transform: capitalize;
   text-align: center;
   padding-inline: 20px;
